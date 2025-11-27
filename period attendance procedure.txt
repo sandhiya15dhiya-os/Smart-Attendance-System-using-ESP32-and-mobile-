@@ -1,0 +1,115 @@
+-- Step 1: Create a stored procedure to mark attendance for a specific period
+DELIMITER $$
+
+CREATE PROCEDURE mark_period_attendance(IN period_num INT)
+BEGIN
+    -- First, insert absent records for all students who don't have attendance for today's period
+    INSERT INTO period_attendance (student_id, date, period, status)
+    SELECT s.id, CURDATE(), period_num, 'Absent'
+    FROM students s
+    WHERE NOT EXISTS (
+        SELECT 1 
+        FROM period_attendance pa 
+        WHERE pa.student_id = s.id 
+        AND pa.date = CURDATE() 
+        AND pa.period = period_num
+    );
+    
+    -- Then, update to 'Present' for students whose MAC addresses were captured during this period
+    UPDATE period_attendance pa
+    INNER JOIN students s ON pa.student_id = s.id
+    INNER JOIN (
+        SELECT DISTINCT mac_address 
+        FROM captured_macs 
+        WHERE DATE(captured_at) = CURDATE() 
+        AND mac_address IS NOT NULL
+    ) cm ON s.mac_address = cm.mac_address
+    SET pa.status = 'Present'
+    WHERE pa.date = CURDATE() 
+    AND pa.period = period_num
+    AND pa.status != 'On Duty'
+    AND s.mac_address IS NOT NULL;
+END$$
+
+DELIMITER ;
+
+-- Step 2: Create events for each period
+-- These events will run at the END of each period to mark attendance
+
+-- Period 1: 08:30 - 09:15 (runs at 09:15)
+CREATE EVENT mark_attendance_period_1
+ON SCHEDULE EVERY 1 DAY
+STARTS CONCAT(CURDATE(), ' 09:15:00')
+DO CALL mark_period_attendance(1);
+
+-- Period 2: 09:15 - 10:00 (runs at 10:00)
+CREATE EVENT mark_attendance_period_2
+ON SCHEDULE EVERY 1 DAY
+STARTS CONCAT(CURDATE(), ' 10:00:00')
+DO CALL mark_period_attendance(2);
+
+-- Period 3: 10:00 - 10:45 (runs at 10:45)
+CREATE EVENT mark_attendance_period_3
+ON SCHEDULE EVERY 1 DAY
+STARTS CONCAT(CURDATE(), ' 10:45:00')
+DO CALL mark_period_attendance(3);
+
+-- Period 4: 11:05 - 11:50 (runs at 11:50)
+CREATE EVENT mark_attendance_period_4
+ON SCHEDULE EVERY 1 DAY
+STARTS CONCAT(CURDATE(), ' 11:50:00')
+DO CALL mark_period_attendance(4);
+
+-- Period 5: 11:50 - 12:35 (runs at 12:35)
+CREATE EVENT mark_attendance_period_5
+ON SCHEDULE EVERY 1 DAY
+STARTS CONCAT(CURDATE(), ' 12:35:00')
+DO CALL mark_period_attendance(5);
+
+-- Period 6: 13:20 - 14:05 (runs at 14:05)
+CREATE EVENT mark_attendance_period_6
+ON SCHEDULE EVERY 1 DAY
+STARTS CONCAT(CURDATE(), ' 14:05:00')
+DO CALL mark_period_attendance(6);
+
+-- Period 7: 14:05 - 14:50 (runs at 14:50)
+CREATE EVENT mark_attendance_period_7
+ON SCHEDULE EVERY 1 DAY
+STARTS CONCAT(CURDATE(), ' 14:50:00')
+DO CALL mark_period_attendance(7);
+
+-- Period 8: 15:05 - 15:50 (runs at 15:50)
+CREATE EVENT mark_attendance_period_8
+ON SCHEDULE EVERY 1 DAY
+STARTS CONCAT(CURDATE(), ' 15:50:00')
+DO CALL mark_period_attendance(8);
+
+-- Period 9: 15:50 - 16:35 (runs at 16:35)
+CREATE EVENT mark_attendance_period_9
+ON SCHEDULE EVERY 1 DAY
+STARTS CONCAT(CURDATE(), ' 16:35:00')
+DO CALL mark_period_attendance(9);
+
+-- Step 3: Enable the event scheduler (if not already enabled)
+-- Run this to check if event scheduler is on:
+-- SHOW VARIABLES LIKE 'event_scheduler';
+
+-- If it shows OFF, enable it with:
+SET GLOBAL event_scheduler = ON;
+
+-- Step 4: Verify events are created
+-- SHOW EVENTS;
+
+-- Step 5: To drop all events if needed (for testing/updates)
+/*
+DROP EVENT IF EXISTS mark_attendance_period_1;
+DROP EVENT IF EXISTS mark_attendance_period_2;
+DROP EVENT IF EXISTS mark_attendance_period_3;
+DROP EVENT IF EXISTS mark_attendance_period_4;
+DROP EVENT IF EXISTS mark_attendance_period_5;
+DROP EVENT IF EXISTS mark_attendance_period_6;
+DROP EVENT IF EXISTS mark_attendance_period_7;
+DROP EVENT IF EXISTS mark_attendance_period_8;
+DROP EVENT IF EXISTS mark_attendance_period_9;
+DROP PROCEDURE IF EXISTS mark_period_attendance;
+*/

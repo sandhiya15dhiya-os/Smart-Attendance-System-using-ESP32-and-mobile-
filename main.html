@@ -1,0 +1,1123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIET Attendance Management System</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            color: #2d3748;
+        }
+
+        /* Header Styles */
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .header-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .logout-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .logout-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Navigation Tabs */
+        .nav-tabs {
+            background: white;
+            padding: 0;
+            margin: 2rem auto;
+            max-width: 1200px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .tab-buttons {
+            display: flex;
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .tab-button {
+            flex: 1;
+            padding: 1.2rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            color: #64748b;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .tab-button.active {
+            color: #667eea;
+            background: white;
+        }
+
+        .tab-button.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 2px 2px 0 0;
+        }
+
+        .tab-button:hover {
+            background: rgba(102, 126, 234, 0.1);
+        }
+
+        /* Tab Content */
+        .tab-content {
+            display: none;
+            padding: 2rem;
+            background: white;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Card Styles */
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom: 2rem;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 1.5rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .card-body {
+            padding: 2rem;
+        }
+
+        /* Form Styles */
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-group input,
+        .form-group select {
+            padding: 0.8rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: #f8fafc;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+            background: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+        }
+
+        /* Button Styles */
+        .btn {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, #48bb78, #38a169);
+            color: white;
+        }
+
+        .btn-warning {
+            background: linear-gradient(135deg, #ed8936, #dd6b20);
+            color: white;
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #f56565, #e53e3e);
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Table Styles */
+        .table-container {
+            overflow-x: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.8rem;
+        }
+
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+            vertical-align: middle;
+        }
+
+        tr:hover {
+            background: #f8fafc;
+        }
+
+        .status-badge {
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .status-present { background: #c6f6d5; color: #22543d; }
+        .status-absent { background: #fed7d7; color: #742a2a; }
+        .status-onduty { background: #feebc8; color: #744210; }
+        .status-holiday { background: #bee3f8; color: #2a4365; }
+
+        .no-data {
+            text-align: center;
+            color: #718096;
+            padding: 3rem;
+            font-style: italic;
+        }
+
+        /* Progress Bar */
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 0.5rem 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #48bb78, #38a169);
+            transition: width 0.8s ease;
+        }
+
+        /* Stats Cards */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #2d3748;
+        }
+
+        .stat-label {
+            color: #718096;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 0.5rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .tab-buttons {
+                flex-direction: column;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .card-body {
+                padding: 1rem;
+            }
+        }
+
+        /* Loading Animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Period Selector */
+        .period-selector {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .period-btn {
+            padding: 0.6rem;
+            border: 2px solid #e2e8f0;
+            background: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .period-btn.active {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-color: transparent;
+        }
+
+        .period-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo">S</div>
+                <div>
+                    <div class="header-title">SIET Attendance System</div>
+                    <div style="font-size: 0.9rem; opacity: 0.8;">Sri Shakthi Institute of Engineering and Technology</div>
+                </div>
+            </div>
+            <a href="logout.php" class="logout-btn">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+        </div>
+    </div>
+
+    <div class="nav-tabs">
+        <div class="tab-buttons">
+            <button class="tab-button active" onclick="switchTab('daily')">
+                <i class="fas fa-calendar-day"></i> Daily Attendance
+            </button>
+            <button class="tab-button" onclick="switchTab('period')">
+                <i class="fas fa-clock"></i> Period-wise Attendance
+            </button>
+            <button class="tab-button" onclick="switchTab('student')">
+                <i class="fas fa-user-graduate"></i> Student Lookup
+            </button>
+            <button class="tab-button" onclick="switchTab('monthly')">
+                <i class="fas fa-chart-bar"></i> Monthly Summary
+            </button>
+          
+        </div>
+
+        <!-- Daily Attendance Tab -->
+        <div class="tab-content active" id="daily">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-calendar-day"></i> Daily Attendance Management
+                </div>
+                <div class="card-body">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dailyDate">Date</label>
+                            <input type="date" id="dailyDate">
+                        </div>
+                        <div class="form-group">
+                            <label for="dailyDepartment">Department</label>
+                            <select id="dailyDepartment">
+                                <option value="">All Departments</option>
+                                <option value="Agri">Agri</option>
+                                <option value="AIDS">AIDS</option>
+                                <option value="AIML">AIML</option>
+                                <option value="BIO-TECH">Bio-Tech</option>
+                                <option value="BME">BME</option>
+                                <option value="Civil">Civil</option>
+                                <option value="CSE">CSE</option>
+                                <option value="Cyber">Cyber Security</option>
+                                <option value="EEE">EEE</option>
+                                <option value="ECE">ECE</option>
+                                <option value="FT">Food Tech</option>
+                                <option value="IT">IT</option>
+                                <option value="Mech">Mechanical</option>
+                                <option value="VLSI">VLSI</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="dailySection">Section</label>
+                            <select id="dailySection">
+                                <option value="">All Sections</option>
+                                <option value="A">Section A</option>
+                                <option value="B">Section B</option>
+                                <option value="C">Section C</option>
+                                <option value="D">Section D</option>
+                                <option value="E">Section E</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label></label>
+                            <button class="btn btn-primary" onclick="loadDailyAttendance()">
+                                <i class="fas fa-search"></i> Load Attendance
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="stats-grid" id="dailyStats" style="display: none;">
+                        <div class="stat-card">
+                            <div class="stat-number" id="totalStudents">0</div>
+                            <div class="stat-label">Total Students</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" id="presentCount">0</div>
+                            <div class="stat-label">Present</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" id="absentCount">0</div>
+                            <div class="stat-label">Absent</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" id="onDutyCount">0</div>
+                            <div class="stat-label">On Duty</div>
+                        </div>
+                    </div>
+
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Roll No</th>
+                                    <th>Department</th>
+                                    <th>Section</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="dailyAttendanceTable">
+                                <tr><td colspan="6" class="no-data">Select date and filters to load attendance</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Period-wise Attendance Tab -->
+        <div class="tab-content" id="period">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-clock"></i> Period-wise Attendance Management
+                </div>
+                <div class="card-body">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="periodDate">Date</label>
+                            <input type="date" id="periodDate">
+                        </div>
+                        <div class="form-group">
+                            <label for="periodDepartment">Department</label>
+                            <select id="periodDepartment">
+                                <option value="Agri">Agri</option>
+                                <option value="AIDS">AIDS</option>
+                                <option value="AIML">AIML</option>
+                                <option value="BIO-TECH">Bio-Tech</option>
+                                <option value="BME">BME</option>
+                                <option value="Civil">Civil</option>
+                                <option value="CSE">CSE</option>
+                                <option value="Cyber">Cyber Security</option>
+                                <option value="EEE">EEE</option>
+                                <option value="ECE">ECE</option>
+                                <option value="FT">Food Tech</option>
+                                <option value="IT">IT</option>
+                                <option value="Mech">Mechanical</option>
+                                <option value="VLSI">VLSI</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="periodSection">Section</label>
+                            <select id="periodSection">
+                                <option value="A">Section A</option>
+                                <option value="B">Section B</option>
+                                <option value="C">Section C</option>
+                                <option value="D">Section D</option>
+                                <option value="E">Section E</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="period-selector" id="periodSelector">
+                        <button class="period-btn" data-period="1">P1<br>8:30-9:15</button>
+                        <button class="period-btn" data-period="2">P2<br>9:15-10:00</button>
+                        <button class="period-btn" data-period="3">P3<br>10:00-10:45</button>
+                        <button class="period-btn" data-period="4">P4<br>11:05-11:50</button>
+                        <button class="period-btn" data-period="5">P5<br>11:50-12:35</button>
+                        <button class="period-btn" data-period="6">P6<br>1:20-2:05</button>
+                        <button class="period-btn" data-period="7">P7<br>2:05-2:50</button>
+                        <button class="period-btn" data-period="8">P8<br>3:05-3:50</button>
+                        <button class="period-btn" data-period="9">P9<br>3:50-4:35</button>
+                    </div>
+
+                    <div class="form-row">
+                        <button class="btn btn-primary" onclick="loadPeriodAttendance()">
+                            <i class="fas fa-search"></i> Load Period Attendance
+                        </button>
+                        <button class="btn btn-success" onclick="markAllPresent()">
+                            <i class="fas fa-check-double"></i> Mark All Present
+                        </button>
+                        <button class="btn btn-warning" onclick="markAllAbsent()">
+                            <i class="fas fa-times-circle"></i> Mark All Absent
+                        </button>
+                    </div>
+
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Roll No</th>
+                                    <th>Name</th>
+                                    <th>P1</th>
+                                    <th>P2</th>
+                                    <th>P3</th>
+                                    <th>P4</th>
+                                    <th>P5</th>
+                                    <th>P6</th>
+                                    <th>P7</th>
+                                    <th>P8</th>
+                                    <th>P9</th>
+                                    <th>Daily %</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="periodAttendanceTable">
+                                <tr><td colspan="13" class="no-data">Select date, department, and section to load period attendance</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Student Lookup Tab -->
+        <div class="tab-content" id="student">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-user-graduate"></i> Individual Student Attendance
+                </div>
+                <div class="card-body">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="studentRoll">Student Roll Number</label>
+                            <input type="text" id="studentRoll" placeholder="Enter roll number">
+                        </div>
+                        <div class="form-group">
+                            <label></label>
+                            <button class="btn btn-primary" onclick="loadStudentAttendance()">
+                                <i class="fas fa-search"></i> Search Student
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Roll No</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="studentAttendanceTable">
+                                <tr><td colspan="4" class="no-data">Enter roll number to search student attendance</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Monthly Summary Tab -->
+        <div class="tab-content" id="monthly">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-chart-bar"></i> Monthly Attendance Summary
+                </div>
+                <div class="card-body">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="monthlyRoll">Student Roll Number</label>
+                            <input type="text" id="monthlyRoll" placeholder="Enter roll number">
+                        </div>
+                        <div class="form-group">
+                            <label for="monthlyDate">Month</label>
+                            <input type="month" id="monthlyDate">
+                        </div>
+                        <div class="form-group">
+                            <label></label>
+                            <button class="btn btn-primary" onclick="loadMonthlySummary()">
+                                <i class="fas fa-chart-line"></i> Generate Report
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Roll No</th>
+                                    <th>Present</th>
+                                    <th>Absent</th>
+                                    <th>On Duty</th>
+                                    <th>Holidays</th>
+                                    <th>Attendance %</th>
+                                </tr>
+                            </thead>
+                            <tbody id="monthlySummaryTable">
+                                <tr><td colspan="7" class="no-data">Enter roll number and month to generate summary</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+    <script>
+        // Global variables
+        let currentTab = 'daily';
+        let selectedPeriods = new Set();
+
+        // Tab switching functionality
+        function switchTab(tabName) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all tab buttons
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+            
+            currentTab = tabName;
+        }
+
+        // Period selector functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const periodButtons = document.querySelectorAll('.period-btn');
+            periodButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const period = this.dataset.period;
+                    if (selectedPeriods.has(period)) {
+                        selectedPeriods.delete(period);
+                        this.classList.remove('active');
+                    } else {
+                        selectedPeriods.add(period);
+                        this.classList.add('active');
+                    }
+                });
+            });
+
+            // Set today's date as default
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('dailyDate').value = today;
+            document.getElementById('periodDate').value = today;
+            
+            // Set current month as default
+            const currentMonth = new Date().toISOString().slice(0, 7);
+            document.getElementById('monthlyDate').value = currentMonth;
+            document.getElementById('subjectMonth').value = currentMonth;
+        });
+
+        // Status utility functions
+        function getStatusBadge(status) {
+            const statusMap = {
+                'Present': '<span class="status-badge status-present">Present</span>',
+                'Absent': '<span class="status-badge status-absent">Absent</span>',
+                'On Duty': '<span class="status-badge status-onduty">On Duty</span>',
+                'Holiday': '<span class="status-badge status-holiday">Holiday</span>'
+            };
+            return statusMap[status] || '<span class="status-badge">Unknown</span>';
+        }
+
+        // Daily Attendance Functions
+        async function loadDailyAttendance() {
+            const date = document.getElementById('dailyDate').value;
+            const department = document.getElementById('dailyDepartment').value;
+            const section = document.getElementById('dailySection').value;
+            
+            if (!date) {
+                alert('Please select a date');
+                return;
+            }
+
+            const tableBody = document.getElementById('dailyAttendanceTable');
+            const statsDiv = document.getElementById('dailyStats');
+            
+            tableBody.innerHTML = '<tr><td colspan="6" class="no-data"><div class="loading"></div> Loading...</td></tr>';
+
+            try {
+                const response = await fetch(`get_attendance.php?date=${date}&department=${department}&section=${section}`);
+                const data = await response.json();
+
+                if (data.error) {
+                    tableBody.innerHTML = `<tr><td colspan="6" class="no-data">${data.error}</td></tr>`;
+                    return;
+                }
+
+                // Update stats
+                const total = data.length;
+                const present = data.filter(row => row.status === 'Present').length;
+                const absent = data.filter(row => row.status === 'Absent' || !row.status).length;
+                const onDuty = data.filter(row => row.status === 'On Duty').length;
+
+                document.getElementById('totalStudents').textContent = total;
+                document.getElementById('presentCount').textContent = present;
+                document.getElementById('absentCount').textContent = absent;
+                document.getElementById('onDutyCount').textContent = onDuty;
+                statsDiv.style.display = 'grid';
+
+                // Update table
+                tableBody.innerHTML = '';
+                data.forEach(row => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td>${row.name}</td>
+                        <td>${row.roll_no}</td>
+                        <td>${row.department}</td>
+                        <td>${row.section}</td>
+                        <td>${getStatusBadge(row.status || 'Absent')}</td>
+                        <td>
+                            <button class="btn btn-warning btn-sm" onclick="markOnDuty('${row.roll_no}', '${date}')">
+                                <i class="fas fa-user-check"></i> Mark On Duty
+                            </button>
+                        </td>
+                    `;
+                    tableBody.appendChild(tr);
+                });
+
+            } catch (error) {
+                console.error('Error loading daily attendance:', error);
+                tableBody.innerHTML = '<tr><td colspan="6" class="no-data">Error loading attendance data</td></tr>';
+            }
+        }
+
+        async function markOnDuty(rollNo, date) {
+            try {
+                const response = await fetch('mark_onduty.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: `student_id=${rollNo}&date=${date}`
+                });
+                
+                const data = await response.json();
+                
+                if (data.status === 'Success') {
+                    alert('Student marked as On Duty successfully');
+                    loadDailyAttendance();
+                } else {
+                    alert('Error: ' + (data.error || 'Unknown error'));
+                }
+            } catch (error) {
+                console.error('Error marking on duty:', error);
+                alert('Failed to mark student on duty');
+            }
+        }
+
+        // Period-wise Attendance Functions
+        async function loadPeriodAttendance() {
+            const date = document.getElementById('periodDate').value;
+            const department = document.getElementById('periodDepartment').value;
+            const section = document.getElementById('periodSection').value;
+            
+            if (!date || !department || !section) {
+                alert('Please select date, department, and section');
+                return;
+            }
+
+            const tableBody = document.getElementById('periodAttendanceTable');
+            tableBody.innerHTML = '<tr><td colspan="13" class="no-data"><div class="loading"></div> Loading...</td></tr>';
+
+            try {
+                const response = await fetch(`get_period_attendance.php?date=${date}&department=${department}&section=${section}`);
+                const data = await response.json();
+
+                if (data.error) {
+                    tableBody.innerHTML = `<tr><td colspan="13" class="no-data">${data.error}</td></tr>`;
+                    return;
+                }
+
+                tableBody.innerHTML = '';
+                data.forEach(row => {
+                    const tr = document.createElement('tr');
+                    const dailyPercentage = calculateDailyPercentage(row.periods);
+                    
+                    tr.innerHTML = `
+                        <td>${row.roll_no}</td>
+                        <td>${row.name}</td>
+                        ${Array.from({length: 9}, (_, i) => {
+                            const period = i + 1;
+                            const status = row.periods[`p${period}`] || 'A';
+                            const statusClass = status === 'P' ? 'status-present' : status === 'OD' ? 'status-onduty' : 'status-absent';
+                            return `<td><span class="status-badge ${statusClass}">${status}</span></td>`;
+                        }).join('')}
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: ${dailyPercentage}%"></div>
+                            </div>
+                            ${dailyPercentage}%
+                        </td>
+                        <td>
+                            <button class="btn btn-warning btn-sm" onclick="markStudentOnDuty('${row.roll_no}', '${date}')">
+                                Mark OD
+                            </button>
+                        </td>
+                    `;
+                    tableBody.appendChild(tr);
+                });
+
+            } catch (error) {
+                console.error('Error loading period attendance:', error);
+                tableBody.innerHTML = '<tr><td colspan="13" class="no-data">Error loading period attendance data</td></tr>';
+            }
+        }
+
+        function calculateDailyPercentage(periods) {
+            const totalPeriods = 9;
+            let presentCount = 0;
+            
+            for (let i = 1; i <= totalPeriods; i++) {
+                const status = periods[`p${i}`];
+                if (status === 'P' || status === 'OD') {
+                    presentCount++;
+                }
+            }
+            
+            return Math.round((presentCount / totalPeriods) * 100);
+        }
+
+        async function markStudentOnDuty(rollNo, date) {
+            try {
+                const response = await fetch('mark_period_onduty.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: `roll_no=${rollNo}&date=${date}`
+                });
+                
+                const data = await response.json();
+                
+                if (data.status === 'Success') {
+                    alert('Student marked as On Duty for all periods');
+                    loadPeriodAttendance();
+                } else {
+                    alert('Error: ' + (data.error || 'Unknown error'));
+                }
+            } catch (error) {
+                console.error('Error marking period on duty:', error);
+                alert('Failed to mark student on duty');
+            }
+        }
+
+        // Student Lookup Functions
+        async function loadStudentAttendance() {
+            const rollNo = document.getElementById('studentRoll').value.trim();
+            
+            if (!rollNo) {
+                alert('Please enter a roll number');
+                return;
+            }
+
+            const tableBody = document.getElementById('studentAttendanceTable');
+            tableBody.innerHTML = '<tr><td colspan="4" class="no-data"><div class="loading"></div> Loading...</td></tr>';
+
+            try {
+                const response = await fetch(`get_student_attendance.php?roll_no=${rollNo}`);
+                const data = await response.json();
+
+                if (data.error) {
+                    tableBody.innerHTML = `<tr><td colspan="4" class="no-data">${data.error}</td></tr>`;
+                    return;
+                }
+
+                if (data.message) {
+                    tableBody.innerHTML = `<tr><td colspan="4" class="no-data">${data.message}</td></tr>`;
+                    return;
+                }
+
+                tableBody.innerHTML = '';
+                data.forEach(row => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td>${row.name}</td>
+                        <td>${row.roll_no}</td>
+                        <td>${row.date || '—'}</td>
+                        <td>${getStatusBadge(row.status)}</td>
+                    `;
+                    tableBody.appendChild(tr);
+                });
+
+            } catch (error) {
+                console.error('Error loading student attendance:', error);
+                tableBody.innerHTML = '<tr><td colspan="4" class="no-data">Error loading student attendance data</td></tr>';
+            }
+        }
+        async function markStudentOnDuty(rollNo, date) {
+  // ...
+  const response = await fetch('markperiodonduty.php', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: `rollno=${rollNo}&date=${date}`
+  });
+  // ...
+}
+
+        // Monthly Summary Functions
+        async function loadMonthlySummary() {
+            const rollNo = document.getElementById('monthlyRoll').value.trim();
+            const month = document.getElementById('monthlyDate').value;
+            
+            if (!rollNo || !month) {
+                alert('Please enter roll number and select month');
+                return;
+            }
+
+            const tableBody = document.getElementById('monthlySummaryTable');
+            tableBody.innerHTML = '<tr><td colspan="7" class="no-data"><div class="loading"></div> Loading...</td></tr>';
+
+            try {
+                const response = await fetch(`get_student_monthly_summary.php?roll_no=${rollNo}&month=${month}`);
+                const data = await response.json();
+
+                if (data.error) {
+                    tableBody.innerHTML = `<tr><td colspan="7" class="no-data">${data.error}</td></tr>`;
+                    return;
+                }
+
+                tableBody.innerHTML = '';
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${data.name}</td>
+                    <td>${data.roll_no}</td>
+                    <td><span class="status-badge status-present">${data.present_count}</span></td>
+                    <td><span class="status-badge status-absent">${data.absent_count}</span></td>
+                    <td><span class="status-badge status-onduty">${data.onduty_count}</span></td>
+                    <td><span class="status-badge status-holiday">${data.holiday_count}</span></td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: ${data.percent}%"></div>
+                        </div>
+                        ${data.percent}%
+                    </td>
+                `;
+                tableBody.appendChild(tr);
+
+            } catch (error) {
+                console.error('Error loading monthly summary:', error);
+                tableBody.innerHTML = '<tr><td colspan="7" class="no-data">Error loading monthly summary data</td></tr>';
+            }
+        }
+
+        // Subject-wise Summary Functions
+        async function loadSubjectSummary() {
+            const rollNo = document.getElementById('subjectRoll').value.trim();
+            const month = document.getElementById('subjectMonth').value;
+            
+            if (!rollNo || !month) {
+                alert('Please enter roll number and select month');
+                return;
+            }
+
+            const tableBody = document.getElementById('subjectSummaryTable');
+            tableBody.innerHTML = '<tr><td colspan="6" class="no-data"><div class="loading"></div> Loading...</td></tr>';
+
+            try {
+                const response = await fetch(`get_subject_summary.php?roll_no=${rollNo}&month=${month}`);
+                const data = await response.json();
+
+                if (data.error) {
+                    tableBody.innerHTML = `<tr><td colspan="6" class="no-data">${data.error}</td></tr>`;
+                    return;
+                }
+
+                if (data.length === 0) {
+                    tableBody.innerHTML = '<tr><td colspan="6" class="no-data">No subject data found</td></tr>';
+                    return;
+                }
+
+                tableBody.innerHTML = '';
+                data.forEach(subject => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td>${subject.subject_name}</td>
+                        <td>${subject.total_classes}</td>
+                        <td><span class="status-badge status-present">${subject.present}</span></td>
+                        <td><span class="status-badge status-absent">${subject.absent}</span></td>
+                        <td><span class="status-badge status-onduty">${subject.onduty}</span></td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: ${subject.percentage}%"></div>
+                            </div>
+                            ${subject.percentage}%
+                        </td>
+                    `;
+                    tableBody.appendChild(tr);
+                });
+
+            } catch (error) {
+                console.error('Error loading subject summary:', error);
+                tableBody.innerHTML = '<tr><td colspan="6" class="no-data">Error loading subject summary data</td></tr>';
+            }
+        }
+    </script>
+</body>
+</html>

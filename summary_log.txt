@@ -1,0 +1,540 @@
+[2025-09-23 06:19:47]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy002, month: 2025-09
+[2025-09-23 06:19:47]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-09-23 06:19:47]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy002, month=2025-09
+[2025-09-23 06:19:47]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=1, name=sheik
+[2025-09-23 06:19:47]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 4
+[2025-09-23 06:19:47]  (09:46 AM IST, Friday, September 12, 2025) Total days: 30, Sundays: 4, Holidays: 4, Working days: 22
+[2025-09-23 06:19:47]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"sheik","roll_no":"CY002","present_count":2,"absent_count":0,"onduty_count":1,"holiday_count":0,"percent":16.67}
+[2025-09-23 06:19:47]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-09-25 11:44:16]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy002, month: 2025-09
+[2025-09-25 11:44:16]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-09-25 11:44:16]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy002, month=2025-09
+[2025-09-25 11:44:16]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=1, name=sheik
+[2025-09-25 11:44:16]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 4
+[2025-09-25 11:44:16]  (09:46 AM IST, Friday, September 12, 2025) Total days: 30, Sundays: 4, Holidays: 4, Working days: 22
+[2025-09-25 11:44:16]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"sheik","roll_no":"CY002","present_count":2,"absent_count":0,"onduty_count":1,"holiday_count":0,"percent":16.67}
+[2025-09-25 11:44:16]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-09-26 08:18:30]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy002, month: 2025-09
+[2025-09-26 08:18:30]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-09-26 08:18:30]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy002, month=2025-09
+[2025-09-26 08:18:30]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=1, name=sheik
+[2025-09-26 08:18:30]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 5
+[2025-09-26 08:18:30]  (09:46 AM IST, Friday, September 12, 2025) Total days: 30, Sundays: 4, Holidays: 5, Working days: 21
+[2025-09-26 08:18:30]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"sheik","roll_no":"CY002","present_count":0,"absent_count":0,"onduty_count":0,"holiday_count":0,"percent":0}
+[2025-09-26 08:18:30]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-09-26 08:18:36]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy001, month: 2025-09
+[2025-09-26 08:18:36]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-09-26 08:18:36]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy001, month=2025-09
+[2025-09-26 08:18:36]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=4, name=SANJAY
+[2025-09-26 08:18:36]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 5
+[2025-09-26 08:18:36]  (09:46 AM IST, Friday, September 12, 2025) Total days: 30, Sundays: 4, Holidays: 5, Working days: 21
+[2025-09-26 08:18:36]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"SANJAY","roll_no":"CY001","present_count":0,"absent_count":0,"onduty_count":0,"holiday_count":0,"percent":0}
+[2025-09-26 08:18:36]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-09-26 08:19:07]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy002, month: 2025-09
+[2025-09-26 08:19:07]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-09-26 08:19:07]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy002, month=2025-09
+[2025-09-26 08:19:07]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=1, name=sheik
+[2025-09-26 08:19:07]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 5
+[2025-09-26 08:19:07]  (09:46 AM IST, Friday, September 12, 2025) Total days: 30, Sundays: 4, Holidays: 5, Working days: 21
+[2025-09-26 08:19:07]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"sheik","roll_no":"CY002","present_count":0,"absent_count":0,"onduty_count":0,"holiday_count":0,"percent":0}
+[2025-09-26 08:19:07]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-09-26 12:20:41]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy001, month: 2025-09
+[2025-09-26 12:20:41]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-09-26 12:20:41]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy001, month=2025-09
+[2025-09-26 12:20:41]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=4, name=SANJAY
+[2025-09-26 12:20:41]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 5
+[2025-09-26 12:20:41]  (09:46 AM IST, Friday, September 12, 2025) Total days: 30, Sundays: 4, Holidays: 5, Working days: 21
+[2025-09-26 12:20:41]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"SANJAY","roll_no":"CY001","present_count":2,"absent_count":0,"onduty_count":0,"holiday_count":0,"percent":12.5}
+[2025-09-26 12:20:41]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-09-26 12:20:50]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy002, month: 2025-09
+[2025-09-26 12:20:50]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-09-26 12:20:50]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy002, month=2025-09
+[2025-09-26 12:20:50]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=1, name=sheik
+[2025-09-26 12:20:50]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 5
+[2025-09-26 12:20:50]  (09:46 AM IST, Friday, September 12, 2025) Total days: 30, Sundays: 4, Holidays: 5, Working days: 21
+[2025-09-26 12:20:50]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"sheik","roll_no":"CY002","present_count":2,"absent_count":0,"onduty_count":0,"holiday_count":0,"percent":12.5}
+[2025-09-26 12:20:50]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-09-27 11:07:36]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy002, month: 2025-09
+[2025-09-27 11:07:36]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-09-27 11:07:36]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy002, month=2025-09
+[2025-09-27 11:07:36]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=1, name=sheik
+[2025-09-27 11:07:36]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 5
+[2025-09-27 11:07:36]  (09:46 AM IST, Friday, September 12, 2025) Total days: 30, Sundays: 4, Holidays: 5, Working days: 21
+[2025-09-27 11:07:36]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"sheik","roll_no":"CY002","present_count":2,"absent_count":0,"onduty_count":0,"holiday_count":0,"percent":12.5}
+[2025-09-27 11:07:36]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-10-04 08:09:12]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy002, month: 2025-10
+[2025-10-04 08:09:12]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-04 08:09:12]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy002, month=2025-10
+[2025-10-04 08:09:12]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=1, name=sheik
+[2025-10-04 08:09:12]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 0
+[2025-10-04 08:09:12]  (09:46 AM IST, Friday, September 12, 2025) Total days: 31, Sundays: 4, Holidays: 0, Working days: 27
+[2025-10-04 08:09:12]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"sheik","roll_no":"CY002","present_count":0,"absent_count":0,"onduty_count":1,"holiday_count":0,"percent":3.7}
+[2025-10-04 08:09:12]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy002, month: 2025-09
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy002, month=2025-09
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=1, name=sheik
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 5
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Total days: 30, Sundays: 4, Holidays: 5, Working days: 21
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Auto-marking absent for unmarked days
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-02
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-03
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-04
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-05
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-06
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-09
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-10
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-11
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-12
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-13
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-16
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-17
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-18
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-19
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-20
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-23
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-24
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-25
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-27
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-30
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"sheik","roll_no":"CY002","present_count":1,"absent_count":20,"onduty_count":0,"holiday_count":0,"percent":6.25}
+[2025-10-04 08:09:25]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-10-07 06:20:30]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy002, month: 2025-10
+[2025-10-07 06:20:30]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-07 06:20:30]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy002, month=2025-10
+[2025-10-07 06:20:30]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=1, name=sheik
+[2025-10-07 06:20:30]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 0
+[2025-10-07 06:20:30]  (09:46 AM IST, Friday, September 12, 2025) Total days: 31, Sundays: 4, Holidays: 0, Working days: 27
+[2025-10-07 06:20:30]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"sheik","roll_no":"CY002","present_count":0,"absent_count":0,"onduty_count":1,"holiday_count":0,"percent":3.7}
+[2025-10-07 06:20:30]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-10-09 12:43:01]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy002, month: 2025-10
+[2025-10-09 12:43:01]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-09 12:43:01]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy002, month=2025-10
+[2025-10-09 12:43:01]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=1, name=sheik
+[2025-10-09 12:43:01]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 0
+[2025-10-09 12:43:01]  (09:46 AM IST, Friday, September 12, 2025) Total days: 31, Sundays: 4, Holidays: 0, Working days: 27
+[2025-10-09 12:43:01]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"sheik","roll_no":"CY002","present_count":1,"absent_count":0,"onduty_count":1,"holiday_count":0,"percent":7.41}
+[2025-10-09 12:43:01]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-10-09 12:43:13]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy002, month: 2025-10
+[2025-10-09 12:43:13]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-09 12:43:13]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy002, month=2025-10
+[2025-10-09 12:43:13]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=1, name=sheik
+[2025-10-09 12:43:13]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 0
+[2025-10-09 12:43:13]  (09:46 AM IST, Friday, September 12, 2025) Total days: 31, Sundays: 4, Holidays: 0, Working days: 27
+[2025-10-09 12:43:13]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"sheik","roll_no":"CY002","present_count":1,"absent_count":0,"onduty_count":1,"holiday_count":0,"percent":7.41}
+[2025-10-09 12:43:13]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-10-09 12:43:17]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy001, month: 2025-10
+[2025-10-09 12:43:17]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-09 12:43:17]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy001, month=2025-10
+[2025-10-09 12:43:17]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=4, name=SANJAY
+[2025-10-09 12:43:17]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 0
+[2025-10-09 12:43:17]  (09:46 AM IST, Friday, September 12, 2025) Total days: 31, Sundays: 4, Holidays: 0, Working days: 27
+[2025-10-09 12:43:17]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"SANJAY","roll_no":"CY001","present_count":4,"absent_count":0,"onduty_count":0,"holiday_count":0,"percent":14.81}
+[2025-10-09 12:43:17]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-10-09 12:43:22]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy003, month: 2025-10
+[2025-10-09 12:43:22]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-09 12:43:22]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy003, month=2025-10
+[2025-10-09 12:43:22]  (09:46 AM IST, Friday, September 12, 2025) No student found with roll_no: cy003
+[2025-10-09 12:43:25]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy004, month: 2025-10
+[2025-10-09 12:43:25]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-09 12:43:25]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy004, month=2025-10
+[2025-10-09 12:43:25]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=3, name=yarshath
+[2025-10-09 12:43:25]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 0
+[2025-10-09 12:43:25]  (09:46 AM IST, Friday, September 12, 2025) Total days: 31, Sundays: 4, Holidays: 0, Working days: 27
+[2025-10-09 12:43:25]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"yarshath","roll_no":"CY004","present_count":2,"absent_count":0,"onduty_count":0,"holiday_count":0,"percent":7.41}
+[2025-10-09 12:43:25]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-10-09 12:43:30]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy005, month: 2025-10
+[2025-10-09 12:43:30]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-09 12:43:30]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy005, month=2025-10
+[2025-10-09 12:43:30]  (09:46 AM IST, Friday, September 12, 2025) No student found with roll_no: cy005
+[2025-10-09 12:43:35]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy006, month: 2025-10
+[2025-10-09 12:43:35]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-09 12:43:35]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy006, month=2025-10
+[2025-10-09 12:43:35]  (09:46 AM IST, Friday, September 12, 2025) No student found with roll_no: cy006
+[2025-10-09 12:43:38]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy008, month: 2025-10
+[2025-10-09 12:43:38]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-09 12:43:38]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy008, month=2025-10
+[2025-10-09 12:43:38]  (09:46 AM IST, Friday, September 12, 2025) No student found with roll_no: cy008
+[2025-10-09 12:43:41]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy007, month: 2025-10
+[2025-10-09 12:43:41]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-09 12:43:41]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy007, month=2025-10
+[2025-10-09 12:43:41]  (09:46 AM IST, Friday, September 12, 2025) No student found with roll_no: cy007
+[2025-10-09 12:43:48]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cys003, month: 2025-10
+[2025-10-09 12:43:48]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-09 12:43:48]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cys003, month=2025-10
+[2025-10-09 12:43:48]  (09:46 AM IST, Friday, September 12, 2025) No student found with roll_no: cys003
+[2025-10-09 12:44:05]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy096, month: 2025-10
+[2025-10-09 12:44:05]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-09 12:44:05]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy096, month=2025-10
+[2025-10-09 12:44:05]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=2, name=sandhiya
+[2025-10-09 12:44:05]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 0
+[2025-10-09 12:44:05]  (09:46 AM IST, Friday, September 12, 2025) Total days: 31, Sundays: 4, Holidays: 0, Working days: 27
+[2025-10-09 12:44:05]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"sandhiya","roll_no":"CY096","present_count":2,"absent_count":0,"onduty_count":0,"holiday_count":0,"percent":7.41}
+[2025-10-09 12:44:05]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-10-09 12:44:13]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy104, month: 2025-10
+[2025-10-09 12:44:13]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-09 12:44:13]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy104, month=2025-10
+[2025-10-09 12:44:13]  (09:46 AM IST, Friday, September 12, 2025) No student found with roll_no: cy104
+[2025-10-09 12:44:16]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cse104, month: 2025-10
+[2025-10-09 12:44:16]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-09 12:44:16]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cse104, month=2025-10
+[2025-10-09 12:44:16]  (09:46 AM IST, Friday, September 12, 2025) No student found with roll_no: cse104
+[2025-10-09 12:44:39]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: 2024cse001, month: 2025-10
+[2025-10-09 12:44:39]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-09 12:44:39]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=2024cse001, month=2025-10
+[2025-10-09 12:44:39]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=0, name=Muthu kumaran
+[2025-10-09 12:44:39]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 0
+[2025-10-09 12:44:39]  (09:46 AM IST, Friday, September 12, 2025) Total days: 31, Sundays: 4, Holidays: 0, Working days: 27
+[2025-10-09 12:44:39]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"Muthu kumaran","roll_no":"2024CSE001","present_count":2,"absent_count":0,"onduty_count":0,"holiday_count":0,"percent":7.41}
+[2025-10-09 12:44:39]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: 2024cse001, month: 2025-09
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=2024cse001, month=2025-09
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=0, name=Muthu kumaran
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 5
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Total days: 30, Sundays: 4, Holidays: 5, Working days: 21
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Auto-marking absent for unmarked days
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-02
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-04
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-05
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-06
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-09
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-10
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-11
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-12
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-13
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-16
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-17
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-18
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-19
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-20
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-23
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-24
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-25
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-27
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-30
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"Muthu kumaran","roll_no":"2024CSE001","present_count":1,"absent_count":19,"onduty_count":1,"holiday_count":0,"percent":12.5}
+[2025-10-09 12:45:26]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy096, month: 2025-09
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy096, month=2025-09
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=2, name=sandhiya
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 5
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Total days: 30, Sundays: 4, Holidays: 5, Working days: 21
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Auto-marking absent for unmarked days
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-02
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-03
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-04
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-05
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-06
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-09
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-11
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-12
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-13
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-16
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-17
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-18
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-19
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-20
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-23
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-24
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-25
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-30
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"sandhiya","roll_no":"CY096","present_count":3,"absent_count":18,"onduty_count":0,"holiday_count":0,"percent":18.75}
+[2025-10-09 12:45:38]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-10-09 12:45:43]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy002, month: 2025-09
+[2025-10-09 12:45:43]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-09 12:45:43]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy002, month=2025-09
+[2025-10-09 12:45:43]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=1, name=sheik
+[2025-10-09 12:45:43]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 5
+[2025-10-09 12:45:43]  (09:46 AM IST, Friday, September 12, 2025) Total days: 30, Sundays: 4, Holidays: 5, Working days: 21
+[2025-10-09 12:45:43]  (09:46 AM IST, Friday, September 12, 2025) Auto-marking absent for unmarked days
+[2025-10-09 12:45:43]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"sheik","roll_no":"CY002","present_count":1,"absent_count":20,"onduty_count":0,"holiday_count":0,"percent":6.25}
+[2025-10-09 12:45:43]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy001, month: 2025-09
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy001, month=2025-09
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=4, name=SANJAY
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 5
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Total days: 30, Sundays: 4, Holidays: 5, Working days: 21
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Auto-marking absent for unmarked days
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-02
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-03
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-04
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-05
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-06
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-09
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-10
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-11
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-12
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-13
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-16
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-17
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-18
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-19
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-20
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-23
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-24
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-25
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-27
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-30
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"SANJAY","roll_no":"CY001","present_count":1,"absent_count":20,"onduty_count":0,"holiday_count":0,"percent":6.25}
+[2025-10-09 12:45:47]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy004, month: 2025-09
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy004, month=2025-09
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=3, name=yarshath
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 5
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Total days: 30, Sundays: 4, Holidays: 5, Working days: 21
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Auto-marking absent for unmarked days
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-02
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-03
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-04
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-05
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-06
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-09
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-10
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-11
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-12
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-13
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-16
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-17
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-18
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-19
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-20
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-23
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-24
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-25
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-27
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-09-30
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"yarshath","roll_no":"CY004","present_count":1,"absent_count":20,"onduty_count":0,"holiday_count":0,"percent":6.25}
+[2025-10-09 12:45:51]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy004, month: 2025-08
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy004, month=2025-08
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=3, name=yarshath
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 6
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Total days: 31, Sundays: 5, Holidays: 6, Working days: 20
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Auto-marking absent for unmarked days
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-01
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-02
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-04
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-05
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-06
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-07
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-08
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-09
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-11
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-12
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-13
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-14
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-16
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-18
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-19
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-20
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-21
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-22
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-23
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-25
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-26
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-27
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-28
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-29
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-08-30
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"yarshath","roll_no":"CY004","present_count":0,"absent_count":25,"onduty_count":0,"holiday_count":0,"percent":0}
+[2025-10-09 12:46:04]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-11-05 06:37:27]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy002, month: 2025-11
+[2025-11-05 06:37:27]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-11-05 06:37:27]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy002, month=2025-11
+[2025-11-05 06:37:27]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=1, name=sheik
+[2025-11-05 06:37:27]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 0
+[2025-11-05 06:37:27]  (09:46 AM IST, Friday, September 12, 2025) Total days: 30, Sundays: 5, Holidays: 0, Working days: 25
+[2025-11-05 06:37:27]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"sheik","roll_no":"CY002","present_count":0,"absent_count":0,"onduty_count":0,"holiday_count":0,"percent":0}
+[2025-11-05 06:37:27]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-11-05 06:37:50]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy005, month: 2025-11
+[2025-11-05 06:37:50]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-11-05 06:37:50]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy005, month=2025-11
+[2025-11-05 06:37:50]  (09:46 AM IST, Friday, September 12, 2025) No student found with roll_no: cy005
+[2025-11-05 06:38:02]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy096, month: 2025-11
+[2025-11-05 06:38:02]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-11-05 06:38:02]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy096, month=2025-11
+[2025-11-05 06:38:02]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=2, name=sandhiya
+[2025-11-05 06:38:02]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 0
+[2025-11-05 06:38:02]  (09:46 AM IST, Friday, September 12, 2025) Total days: 30, Sundays: 5, Holidays: 0, Working days: 25
+[2025-11-05 06:38:02]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"sandhiya","roll_no":"CY096","present_count":1,"absent_count":0,"onduty_count":0,"holiday_count":0,"percent":4}
+[2025-11-05 06:38:02]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy001, month: 2025-10
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy001, month=2025-10
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=4, name=SANJAY
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 0
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Total days: 31, Sundays: 4, Holidays: 0, Working days: 27
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Auto-marking absent for unmarked days
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-01
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-02
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-03
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-08
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-11
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-13
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-16
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-17
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-18
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-20
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-21
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-22
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-23
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-24
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-25
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-27
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-28
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-29
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-30
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-31
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"SANJAY","roll_no":"CY001","present_count":7,"absent_count":20,"onduty_count":0,"holiday_count":0,"percent":25.93}
+[2025-11-26 10:50:46]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-11-26 10:51:00]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy001, month: 2025-06
+[2025-11-26 10:51:00]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-11-26 10:51:00]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy001, month=2025-06
+[2025-11-26 10:51:00]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=4, name=SANJAY
+[2025-11-26 10:51:00]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 0
+[2025-11-26 10:51:00]  (09:46 AM IST, Friday, September 12, 2025) Total days: 30, Sundays: 5, Holidays: 0, Working days: 25
+[2025-11-26 10:51:00]  (09:46 AM IST, Friday, September 12, 2025) Auto-marking absent for unmarked days
+[2025-11-26 10:51:00]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"SANJAY","roll_no":"CY001","present_count":0,"absent_count":25,"onduty_count":0,"holiday_count":0,"percent":0}
+[2025-11-26 10:51:00]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy002, month: 2025-06
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy002, month=2025-06
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=1, name=sheik
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 0
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Total days: 30, Sundays: 5, Holidays: 0, Working days: 25
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Auto-marking absent for unmarked days
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-02
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-03
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-04
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-05
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-06
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-07
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-09
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-10
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-11
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-12
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-13
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-14
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-16
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-17
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-18
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-19
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-20
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-21
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-23
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-24
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-25
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-26
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-27
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-28
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-06-30
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"sheik","roll_no":"CY002","present_count":0,"absent_count":25,"onduty_count":0,"holiday_count":0,"percent":0}
+[2025-11-26 10:56:21]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy002, month: 2025-10
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy002, month=2025-10
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=1, name=sheik
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 0
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Total days: 31, Sundays: 4, Holidays: 0, Working days: 27
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Auto-marking absent for unmarked days
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-01
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-02
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-03
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-06
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-07
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-08
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-10
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-11
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-13
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-14
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-15
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-16
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-17
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-18
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-20
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-21
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-22
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-23
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-24
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-25
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-27
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-28
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-29
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-30
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-31
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"sheik","roll_no":"CY002","present_count":1,"absent_count":25,"onduty_count":1,"holiday_count":0,"percent":7.41}
+[2025-11-26 10:56:33]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+
+[2025-11-26 10:56:46]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy003, month: 2025-10
+[2025-11-26 10:56:46]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-11-26 10:56:46]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy003, month=2025-10
+[2025-11-26 10:56:46]  (09:46 AM IST, Friday, September 12, 2025) No student found with roll_no: cy003
+[2025-11-26 10:56:55]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cs001, month: 2025-10
+[2025-11-26 10:56:55]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-11-26 10:56:55]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cs001, month=2025-10
+[2025-11-26 10:56:55]  (09:46 AM IST, Friday, September 12, 2025) No student found with roll_no: cs001
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Processing request for roll_no: cy096, month: 2025-10
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Database connected successfully
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Sanitized inputs: roll_no=cy096, month=2025-10
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Student found: id=2, name=sandhiya
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Holiday count: 0
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Total days: 31, Sundays: 4, Holidays: 0, Working days: 27
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Auto-marking absent for unmarked days
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-01
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-02
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-03
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-04
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-07
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-08
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-11
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-13
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-15
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-17
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-18
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-20
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-21
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-22
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-23
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-24
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-25
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-27
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-28
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-29
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-30
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Marked absent for date: 2025-10-31
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Summary generated: {"name":"sandhiya","roll_no":"CY096","present_count":4,"absent_count":22,"onduty_count":1,"holiday_count":0,"percent":18.52}
+[2025-11-26 10:57:03]  (09:46 AM IST, Friday, September 12, 2025) Request processed successfully
+

@@ -1,0 +1,4 @@
+CREATE EVENT auto_period_attendance
+ON SCHEDULE EVERY 1 HOUR
+DO
+  CALL MarkPeriodAttendanceFromCapturedMACs(CURDATE(), HOUR(NOW()));
